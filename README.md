@@ -1,16 +1,4 @@
-<div align="center">
-  <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
-  </a>
-</div>
-
-[![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![deps][deps]][deps-url]
-[![tests][tests]][tests-url]
-[![chat][chat]][chat-url]
-
-# stylelint-webpack-plugin
+# @xmgh/stylelint-webpack-pluginn
 
 A Stylelint plugin for webpack
 
@@ -18,36 +6,20 @@ A Stylelint plugin for webpack
 
 This module requires a minimum of Node v6.9.0 and webpack v4.0.0.
 
-## Differences With stylelint-loader
-
-Both [`stylelint-loader`](https://github.com/adrianhall/stylelint-loader) and
-this module have their uses. `stylelint-loader` lints the files you `require` 
-(or the ones you define as an `entry` in your `webpack` config). However,
-`@imports` in files are not followed, meaning only the main file for each
-`require/entry` is linted.
-
-`stylelint-webpack-plugin` allows defining a
-[glob pattern](https://en.wikipedia.org/wiki/Glob_(programming)) matching the
-configuration and use of `stylelint`.
-
 ## Getting Started
 
-To begin, you'll need to install `stylelint-webpack-plugin`:
+To begin, you'll need to install `@xmgh/stylelint-webpack-pluginn`:
 
 ```console
-$ npm install stylelint-webpack-plugin --save-dev
+$ npm install @xmgh/stylelint-webpack-pluginn --save-dev
 ```
 
 Then add the plugin to your `webpack` config. For example:
 
-**file.ext**
-```js
-import file from 'file.ext';
-```
 
 ```js
 // webpack.config.js
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+const StyleLintPlugin = require('@xmgh/stylelint-webpack-pluginn');
 
 module.exports = {
   // ...
@@ -141,30 +113,6 @@ can use the `quiet` option to avoid error output to the console.
 
 ## Acknowledgement
 
-This project was inspired by, and is a heavily modified version of
-`sasslint-webpack-plugin`.
+This project was forked by [webpack-contrib/stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin), and `update peerDependencies stylelint to ^10.1.0`
 
-Thanks to Javier ([@vieron](https://github.com/vieron)) for authoring this
-plugin.
 
-## License
-
-#### [MIT](./LICENSE)
-
-[npm]: https://img.shields.io/npm/v/stylelint-webpack-plugin.svg
-[npm-url]: https://npmjs.com/package/stylelint-webpack-plugin
-
-[node]: https://img.shields.io/node/v/stylelint-webpack-plugin.svg
-[node-url]: https://nodejs.org
-
-[deps]: https://david-dm.org/webpack-contrib/stylelint-webpack-plugin.svg
-[deps-url]: https://david-dm.org/webpack-contrib/stylelint-webpack-plugin
-
-[tests]: 	https://img.shields.io/circleci/project/github/webpack-contrib/stylelint-webpack-plugin.svg
-[tests-url]: https://circleci.com/gh/webpack-contrib/stylelint-webpack-plugin
-
-[cover]: https://codecov.io/gh/webpack-contrib/stylelint-webpack-plugin/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/stylelint-webpack-plugin
-
-[chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
-[chat-url]: https://gitter.im/webpack/webpack
