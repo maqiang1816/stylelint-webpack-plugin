@@ -1,4 +1,4 @@
-# @xmgh/stylelint-webpack-pluginn
+# @xmgh/stylelint-webpack-plugin
 
 A Stylelint plugin for webpack
 
@@ -8,10 +8,10 @@ This module requires a minimum of Node v6.9.0 and webpack v4.0.0.
 
 ## Getting Started
 
-To begin, you'll need to install `@xmgh/stylelint-webpack-pluginn`:
+To begin, you'll need to install `@xmgh/stylelint-webpack-plugin`:
 
 ```console
-$ npm install @xmgh/stylelint-webpack-pluginn --save-dev
+$ npm install @xmgh/stylelint-webpack-plugin --save-dev
 ```
 
 Then add the plugin to your `webpack` config. For example:
@@ -19,7 +19,7 @@ Then add the plugin to your `webpack` config. For example:
 
 ```js
 // webpack.config.js
-const StyleLintPlugin = require('@xmgh/stylelint-webpack-pluginn');
+const StyleLintPlugin = require('@xmgh/stylelint-webpack-plugin');
 
 module.exports = {
   // ...
