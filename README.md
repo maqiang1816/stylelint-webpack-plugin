@@ -10,12 +10,11 @@ This module requires a minimum of Node v6.9.0 and webpack v4.0.0.
 
 To begin, you'll need to install `@xmgh/stylelint-webpack-plugin`:
 
-```console
-$ npm install @xmgh/stylelint-webpack-plugin --save-dev
+```bash
+ npm install @xmgh/stylelint-webpack-plugin --save-dev
 ```
 
 Then add the plugin to your `webpack` config. For example:
-
 
 ```js
 // webpack.config.js
@@ -113,6 +112,4 @@ can use the `quiet` option to avoid error output to the console.
 
 ## Acknowledgement
 
-This project was forked by [webpack-contrib/stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin), and `update peerDependencies stylelint to ^10.1.0`
-
-
+This project was forked by [webpack-contrib/stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin), and `update peerDependencies stylelint to ^10.0.0`
