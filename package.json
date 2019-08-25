@@ -1,6 +1,6 @@
 {
   "name": "@xmgh/stylelint-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A stylelint plugin for webpack",
   "license": "MIT",
   "author": "maqiang1816 <maqiang1816@foxmail.com>",
